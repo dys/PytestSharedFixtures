@@ -10,7 +10,6 @@ def test_library_as_fixture(library_one):
 
 def test_library_as_import():
     l1 = libraries.library_one.library_one()
-    print l1
     assert l1.config == "default"
 
 def test_library_from_cli():

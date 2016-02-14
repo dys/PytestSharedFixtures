@@ -14,5 +14,5 @@ def make_global(cls):
 
 @pytest.fixture
 def library_one():
-    from libraries.library_one import library_one as _library_one
-    return make_global(_library_one)
+    from libraries.library_one import library_one as _lib
+    return make_global(_lib)
