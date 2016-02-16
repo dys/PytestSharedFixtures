@@ -3,6 +3,7 @@ class LibraryOne(object):
         self.config = config
 
 def library_one(*args, **kwargs):
+    global _library_one
     try:
         return _library_one
     except NameError:
